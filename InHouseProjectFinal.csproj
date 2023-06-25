@@ -1,0 +1,468 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08DB8C9A-2080-4666-BB5B-8C781313D8D8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InHouseProjectFinal</RootNamespace>
+    <AssemblyName>InHouseProjectFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="buymodule1.aspx" />
+    <Content Include="buymodule10.aspx" />
+    <Content Include="buymodule2.aspx" />
+    <Content Include="buymodule3.aspx" />
+    <Content Include="buymodule4.aspx" />
+    <Content Include="buymodule5.aspx" />
+    <Content Include="buymodule6.aspx" />
+    <Content Include="buymodule7.aspx" />
+    <Content Include="buymodule8.aspx" />
+    <Content Include="buymodule9.aspx" />
+    <Content Include="BuyPage.aspx" />
+    <Content Include="Contactuspage.aspx" />
+    <Content Include="css\aboutusstyle.css" />
+    <Content Include="css\footerstyle.css" />
+    <Content Include="css\sellrentstyle.css" />
+    <Content Include="css\styleone.css" />
+    <Content Include="css\styletwo.css" />
+    <Content Include="css\testimonial2.css" />
+    <Content Include="css\testimonialstyle.css" />
+    <Content Include="Forgotpwdpage.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="Images\aboutusimg.svg" />
+    <Content Include="Images\balcony.png" />
+    <Content Include="Images\bath.png" />
+    <Content Include="Images\bed.jpg" />
+    <Content Include="Images\buildingcoverimg.jpg" />
+    <Content Include="Images\buypagecover.jpg" />
+    <Content Include="Images\caaal.jpg" />
+    <Content Include="Images\faq-msg.svg" />
+    <Content Include="Images\homepg1slide1.jpg" />
+    <Content Include="Images\homepg1slide2.jpg" />
+    <Content Include="Images\homepg1slide3.jpg" />
+    <Content Include="Images\homepg1slide4.jpg" />
+    <Content Include="Images\homepg2slide1.jpg" />
+    <Content Include="Images\homepg2slide2.jpg" />
+    <Content Include="Images\homepg2slide3.jpg" />
+    <Content Include="Images\homepg2slide4.jpg" />
+    <Content Include="Images\homepg3slide1.jpg" />
+    <Content Include="Images\homepg3slide2.jpg" />
+    <Content Include="Images\homepg3slide3.jpg" />
+    <Content Include="Images\homepg3slide4.jpg" />
+    <Content Include="Images\homepg4slide1.jpg" />
+    <Content Include="Images\homepg4slide2.jpg" />
+    <Content Include="Images\homepg4slide3.jpg" />
+    <Content Include="Images\homepg4slide4.jpg" />
+    <Content Include="Images\homepg5slide1.jpg" />
+    <Content Include="Images\homepg5slide2.jpg" />
+    <Content Include="Images\homepg5slide3.jpg" />
+    <Content Include="Images\homepg5slide4.jpg" />
+    <Content Include="Images\homepghouse5.jpeg" />
+    <Content Include="Images\homepghouse1.jpg" />
+    <Content Include="Images\homepghouse2.jpg" />
+    <Content Include="Images\homepghouse3.jpg" />
+    <Content Include="Images\homepghouse4.jpg" />
+    <Content Include="Images\house-emoji.png" />
+    <Content Include="Images\house0.jpg" />
+    <Content Include="Images\house1.jpg" />
+    <Content Include="Images\house15.jpg" />
+    <Content Include="Images\house2.jpg" />
+    <Content Include="Images\house3.jpg" />
+    <Content Include="Images\house4.jpg" />
+    <Content Include="Images\house5.jpg" />
+    <Content Include="Images\house6.jpg" />
+    <Content Include="Images\nine.jpg" />
+    <Content Include="Images\nobroker.png" />
+    <Content Include="Images\pg1.jpg" />
+    <Content Include="Images\pg10.jpg" />
+    <Content Include="Images\pg2.jpg" />
+    <Content Include="Images\pg3.jpg" />
+    <Content Include="Images\pg4.jpg" />
+    <Content Include="Images\pg5.jpg" />
+    <Content Include="Images\pg6.jpg" />
+    <Content Include="Images\pg7.jpg" />
+    <Content Include="Images\pg8.jpg" />
+    <Content Include="Images\pg9.jpg" />
+    <Content Include="Images\reading.png" />
+    <Content Include="Images\rentaggrement.jpg" />
+    <Content Include="Images\rentpgslide1.jpg" />
+    <Content Include="Images\rentpgslide2.jpg" />
+    <Content Include="Images\rentpgslide3.jpg" />
+    <Content Include="Images\rentpgslide4.jpg" />
+    <Content Include="Images\rentpgslide5.jpg" />
+    <Content Include="Images\rentpgslide6.jpg" />
+    <Content Include="Images\sami_f.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\buymodules1.jpg" />
+    <Content Include="Images\buymodules2.jpg" />
+    <Content Include="Images\buymodules3.jpg" />
+    <Content Include="Images\buymodules4.jpg" />
+    <Content Include="Images\buymodules5.jpg" />
+    <Content Include="Images\buymodules6.jpg" />
+    <Content Include="Images\buymodules7.jpg" />
+    <Content Include="Images\buymodules8.jpg" />
+    <Content Include="Images\slidepg1.jpg" />
+    <Content Include="Images\slidepg2.jpg" />
+    <Content Include="Images\slidepg3.jpg" />
+    <Content Include="Images\slidepg4.jpg" />
+    <Content Include="Images\slidepg5.jpg" />
+    <Content Include="Images\slidepg6.jpg" />
+    <Content Include="Images\sliderhouse01.jpg" />
+    <Content Include="Images\sliderhouse02.jpg" />
+    <Content Include="Images\sliderhouse03.jpg" />
+    <Content Include="Images\square-yards-expert.svg" />
+    <Content Include="Images\testimonialperson1.jpg" />
+    <Content Include="Images\testimonialperson2.jpg" />
+    <Content Include="Images\testimonialperson3.jpg" />
+    <Content Include="Images\testimonialperson4.jpg" />
+    <Content Include="Images\testimonialperson5.jpg" />
+    <Content Include="Images\testimonialperson6.jpg" />
+    <Content Include="Images\unnamed.jpg" />
+    <Content Include="Images\userfriendly.png" />
+    <Content Include="loginform.aspx" />
+    <Content Include="loginform2.aspx" />
+    <Content Include="logoutpg.aspx" />
+    <Content Include="moretestimonialspage.aspx" />
+    <Content Include="Notes.txt" />
+    <Content Include="other\jquery.js" />
+    <Content Include="other\script.js" />
+    <Content Include="other\wowslider.js" />
+    <Content Include="pgmodule1.aspx" />
+    <Content Include="Privacypolicypage.aspx" />
+    <Content Include="registrationform.aspx" />
+    <Content Include="rentagreementpage1.aspx" />
+    <Content Include="rentagreementpage2.aspx" />
+    <Content Include="rentagreementpage3.aspx" />
+    <Content Include="rentagreementpage4.aspx" />
+    <Content Include="RentPage.aspx" />
+    <Content Include="sellrentformfill.aspx" />
+    <Content Include="sellrentpage.aspx" />
+    <Content Include="termsandconditionspage.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Aboutuspage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="buymodule1.aspx.cs">
+      <DependentUpon>buymodule1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule1.aspx.designer.cs">
+      <DependentUpon>buymodule1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule10.aspx.cs">
+      <DependentUpon>buymodule10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule10.aspx.designer.cs">
+      <DependentUpon>buymodule10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule2.aspx.cs">
+      <DependentUpon>buymodule2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule2.aspx.designer.cs">
+      <DependentUpon>buymodule2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule3.aspx.cs">
+      <DependentUpon>buymodule3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule3.aspx.designer.cs">
+      <DependentUpon>buymodule3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule4.aspx.cs">
+      <DependentUpon>buymodule4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule4.aspx.designer.cs">
+      <DependentUpon>buymodule4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule5.aspx.cs">
+      <DependentUpon>buymodule5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule5.aspx.designer.cs">
+      <DependentUpon>buymodule5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule6.aspx.cs">
+      <DependentUpon>buymodule6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule6.aspx.designer.cs">
+      <DependentUpon>buymodule6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule7.aspx.cs">
+      <DependentUpon>buymodule7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule7.aspx.designer.cs">
+      <DependentUpon>buymodule7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule8.aspx.cs">
+      <DependentUpon>buymodule8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule8.aspx.designer.cs">
+      <DependentUpon>buymodule8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buymodule9.aspx.cs">
+      <DependentUpon>buymodule9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buymodule9.aspx.designer.cs">
+      <DependentUpon>buymodule9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuyPage.aspx.cs">
+      <DependentUpon>BuyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuyPage.aspx.designer.cs">
+      <DependentUpon>BuyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactuspage.aspx.cs">
+      <DependentUpon>Contactuspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactuspage.aspx.designer.cs">
+      <DependentUpon>Contactuspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotpwdpage.aspx.cs">
+      <DependentUpon>Forgotpwdpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgotpwdpage.aspx.designer.cs">
+      <DependentUpon>Forgotpwdpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.aspx.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginform.aspx.designer.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginform2.aspx.cs">
+      <DependentUpon>loginform2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginform2.aspx.designer.cs">
+      <DependentUpon>loginform2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logoutpg.aspx.cs">
+      <DependentUpon>logoutpg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logoutpg.aspx.designer.cs">
+      <DependentUpon>logoutpg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="moretestimonialspage.aspx.cs">
+      <DependentUpon>moretestimonialspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="moretestimonialspage.aspx.designer.cs">
+      <DependentUpon>moretestimonialspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgmodule1.aspx.cs">
+      <DependentUpon>pgmodule1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgmodule1.aspx.designer.cs">
+      <DependentUpon>pgmodule1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacypolicypage.aspx.cs">
+      <DependentUpon>Privacypolicypage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacypolicypage.aspx.designer.cs">
+      <DependentUpon>Privacypolicypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registrationform.aspx.cs">
+      <DependentUpon>registrationform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registrationform.aspx.designer.cs">
+      <DependentUpon>registrationform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aboutuspage.aspx.cs">
+      <DependentUpon>Aboutuspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutuspage.aspx.designer.cs">
+      <DependentUpon>Aboutuspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rentagreementpage1.aspx.cs">
+      <DependentUpon>rentagreementpage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rentagreementpage1.aspx.designer.cs">
+      <DependentUpon>rentagreementpage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rentagreementpage2.aspx.cs">
+      <DependentUpon>rentagreementpage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rentagreementpage2.aspx.designer.cs">
+      <DependentUpon>rentagreementpage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rentagreementpage3.aspx.cs">
+      <DependentUpon>rentagreementpage3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rentagreementpage3.aspx.designer.cs">
+      <DependentUpon>rentagreementpage3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rentagreementpage4.aspx.cs">
+      <DependentUpon>rentagreementpage4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rentagreementpage4.aspx.designer.cs">
+      <DependentUpon>rentagreementpage4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RentPage.aspx.cs">
+      <DependentUpon>RentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RentPage.aspx.designer.cs">
+      <DependentUpon>RentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellrentformfill.aspx.cs">
+      <DependentUpon>sellrentformfill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellrentformfill.aspx.designer.cs">
+      <DependentUpon>sellrentformfill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellrentpage.aspx.cs">
+      <DependentUpon>sellrentpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellrentpage.aspx.designer.cs">
+      <DependentUpon>sellrentpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="termsandconditionspage.aspx.cs">
+      <DependentUpon>termsandconditionspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="termsandconditionspage.aspx.designer.cs">
+      <DependentUpon>termsandconditionspage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\buybanner.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63885</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44359/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

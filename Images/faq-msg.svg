@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="139.334" height="150.301" viewBox="0 0 139.334 150.301">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.417" y1="0.556" x2="1" y2="0.669" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#58bf93"/>
+      <stop offset="1" stop-color="#57bd6f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.099" y1="0.877" x2="0.962" y2="0.077" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8345cb"/>
+      <stop offset="1" stop-color="#3850d1"/>
+    </linearGradient>
+  </defs>
+  <g id="test" transform="translate(-19.943 -32.677)">
+    <path id="Path_7149" data-name="Path 7149" d="M52.155,70.224c5.3-23.21,22.26-31.72,34.965-35.208,8.725-2.338,52.853-9.23,61.033,21.3,3.463,12.926-1.539,17.479,3.812,25.66q2.745,4.2,5.821,9.535c2.048,3.721,1.992,6.632-.207,7.538-2.338.949-6.028.9-10.018.5-3.265-.349-7.094-1.18-10.624-1.763-8.6,9.195-21.212,14.641-38.23,14.8C77.06,112.356,46.107,99.11,52.155,70.224Z" fill="url(#linear-gradient)"/>
+    <g id="Group_4890" data-name="Group 4890" style="mix-blend-mode: multiply;isolation: isolate">
+      <path id="Path_7150" data-name="Path 7150" d="M78.042,156.88c-5.233,4.985-10.636,11.073-14.754,15.9-3.974,4.647-8.009,8.487-11.6,9.916-3.414,1.255-6.595-1.7-8.393-7.7q-2.4-8.763-3.947-15.98c-1.028-4.818-5.473-9.282-9.234-14.628a57.467,57.467,0,0,1-7.536-15.376,58.077,58.077,0,0,1-2.587-12.217c-.284-6.3.772-10.735,3.123-14.488C29,94.081,45.462,86.726,66.96,81.025c11.9-2.909,22.466-4.163,31.229-3.955,8.555.347,14.826,4.34,17.987,9.876,11.914,25.787,8.534,47.874,3.879,55.971C112.521,155.942,87.339,149.481,78.042,156.88Z" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

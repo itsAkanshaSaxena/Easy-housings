@@ -1,0 +1,21 @@
+﻿.sellrentbtn {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    outline: 1px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 7px #CCCCCC;
+}
+
+    .sellrentbtn:hover {
+        background-color: forestgreen
+    }
+
+    .sellrentbtn:active {
+        background-color: forestgreen;
+        box-shadow: 0 4px #666;
+        transform: translateY(5px);
+    }
